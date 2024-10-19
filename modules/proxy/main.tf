@@ -2,9 +2,10 @@ terraform {
   required_providers {
     proxmox = {
       source  = "bpg/proxmox"
-      version = "0.64.0"
+      version = "0.66.2"
     }
   }
+  required_version = ">= 1.9"
 }
 
 data "proxmox_virtual_environment_vm" "template" {
